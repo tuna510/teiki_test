@@ -258,7 +258,7 @@ a {
 
 /* studio----------------------------------------- */
 
-@media (max-width: 600px) {
+@media (min-width: 601px) and (max-width: 1000px) {
 
 .index {
     width:95%;
@@ -418,4 +418,167 @@ a {
     text-decoration: none;
 }
 }
+
+
+@media (max-width: 600px) {
+
+.index {
+    width:95%;
+    font-weight:700;
+    padding: 10px;
+}
+
+    .nama_ko {
+        display: none;
+    }
+
+    .block {
+        display: block;
+    }
+
+    .left_block,
+    .right_block {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .right_txt {
+    width: 100%;
+}
+.a_left {
+    width:95%;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: #f2f8f0;
+    margin-bottom: 10px;
+}
+.b_right {
+    width:95%;
+    padding: 10px;
+    background-color: #f2f8f0;
+
+}
+    .table_vscode {
+        position: fixed !important;
+        /* display: none; */
+        display: block;
+        top: 50px;
+        right: 0 !important;
+        height: 100vh !important;
+        width: 100%;
+        background: white;
+        transform: translateX(20%); /* 初期は右外 */
+        background-color: rgba(255, 255, 255, 0.466) !important;
+        transition: transform 0.3s ease !important;
+        z-index: 9998 !important;
+        overflow-y: auto !important;
+        padding: 20px !important;
+        text-align: left !important;
+    }
+
+    .menu-button {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .table_vscode.active {
+    transform: translateX(-40%) !important; 
+    }
+
+.table_icon {
+    transform: none !important; 
+    transition: none !important; 
+    animation: none !important; 
+    background-image: none !important; 
+    display: block;
+    padding: 11px 15px 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+}
+
+
+@media (max-width: 600px) {
+
+.index {
+    width:95%;
+    font-weight:700;
+    padding: 10px;
+}
+
+    .nama_ko {
+        display: none;
+    }
+
+    .block {
+        display: block;
+    }
+
+    .left_block,
+    .right_block {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .right_txt {
+    width: 100%;
+}
+.a_left {
+    width:95%;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: #f2f8f0;
+    margin-bottom: 10px;
+}
+.b_right {
+    width:95%;
+    padding: 10px;
+    background-color: #f2f8f0;
+
+}
+    .table_vscode {
+        position: fixed !important;
+        /* display: none; */
+        display: block;
+        top: 50px;
+        right: 0 !important;
+        height: 100vh !important;
+        width: 100%;
+        background: white;
+        transform: translateX(20%); /* 初期は右外 */
+        background-color: rgba(255, 255, 255, 0.466) !important;
+        transition: transform 0.3s ease !important;
+        z-index: 9998 !important;
+        overflow-y: auto !important;
+        padding: 20px !important;
+        text-align: left !important;
+    }
+
+    .menu-button {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .table_vscode.active {
+    transform: translateX(-30%) !important; 
+    }
+
+.table_icon {
+    transform: none !important; 
+    transition: none !important; 
+    animation: none !important; 
+    background-image: none !important; 
+    display: block;
+    padding: 11px 15px 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+}
+
 
