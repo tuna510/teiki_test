@@ -79,3 +79,21 @@ function header_dayo() {
     html += '</header>';
     document.write(html);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.querySelector('.menu-button');
+    const menu = document.querySelector('.table_vscode');
+
+    menuButton.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+
+    // メニュー外クリックで閉じる
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.table_vscode') && !e.target.closest('.menu-button')) {
+            menu.classList.remove('active');
+
+
+        }
+    });
+});
