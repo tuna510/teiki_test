@@ -261,9 +261,9 @@ a {
 @media (max-width: 1000px) {
 
 .index {
-    width:100%;
+    width:95%;
     font-weight:700;
-    padding: 0.5em;
+    padding: 10px;
 }
 
     .nama_ko {
@@ -283,14 +283,14 @@ a {
     width: 100%;
 }
 .a_left {
-    width:100%;
+    width:95%;
     margin-right: 15px;
     padding: 10px;
     background-color: #f2f8f0;
     margin-bottom: 10px;
 }
 .b_right {
-    width:100%;
+    width:95%;
     padding: 10px;
     background-color: #f2f8f0;
 
@@ -333,7 +333,7 @@ a {
     animation: none !important; /* アニメーション解除 */
     background-image: none !important; /* 必要なら背景画像も解除 */
     display: block;
-    padding: 10px 15px 7px;
+    padding: 11px 15px 5px;
     margin-bottom: 5px;
     text-decoration: none;
 }
