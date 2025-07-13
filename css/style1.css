@@ -304,7 +304,7 @@ a {
         height: 100vh !important;
         width: 100%;
         background: white;
-        transform: translateX(100%); /* 初期は右外 */
+        transform: translateX(20%); /* 初期は右外 */
         background-color: rgba(255, 255, 255, 0.466) !important;
         transition: transform 0.3s ease !important;
         z-index: 9998 !important;
@@ -324,7 +324,7 @@ a {
 
 /* メニューオープン時（スライドイン） */
     .table_vscode.active {
-    transform: translateX(-30%) !important; /* スライドイン */
+    transform: translateX(-10%) !important; /* スライドイン */
     }
 
 .table_icon {
