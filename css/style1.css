@@ -1,0 +1,330 @@
+/* 1289以下はTOP崩れる */
+#naiyo {
+    display: none;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.goto {
+    text-align: center;
+}
+
+/* ■ヘッダー */
+#header {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    filter: drop-shadow(0 3px 3px rgba(176, 187, 187, 0.726));
+    z-index: 1145141919810;
+}
+
+/* ■ヘッダー＞メニュー */
+nav ul {
+    /* display: table; */
+    margin: 0 50px;
+    /* padding: 0; */
+    /* width: 90%; */
+    line-height: 47px;
+}
+
+nav li {
+    display: table-cell;
+    /* margin: 0 5px; */
+    padding: 0 10px;
+    min-width: 50px;
+    text-align: center;
+}
+
+/*  */
+nav a {
+    /* display: block; */
+    /* width: 100%; */
+    text-decoration: none;
+    color: #555;
+}
+
+nav li.current {
+    border-bottom: 3px solid rgb(74, 236, 201);
+}
+
+nav li:hover {
+    border-bottom: 3px solid rgb(74, 236, 201);
+}
+
+
+/* -------------------------------------------------- */
+
+/* 右のメニュー------------------------ */
+.table_vscode {
+    position: fixed;
+    left: 80%;
+    top: 10%;
+    padding: 20px;
+    width: 150px;
+    height: 70%;
+    text-align: center;
+}
+
+@keyframes anim-scale {
+    0% {
+        transform: scale(0.4, 0.4);
+    }
+
+    40% {
+        transform: scale(1.2, 1.2);
+    }
+
+    60% {
+        transform: scale(1, 1);
+    }
+
+    80% {
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+/* ■ページ共通 */
+.page {
+    margin: 50px 5%;
+    color: #696C6E;
+}
+
+.title {
+    font-size: 20px;
+    color: rgb(105, 108, 110);
+}
+
+.kuro {
+    background-color: #364549;
+    color: #e3e3e3;
+    width: 60%;
+    padding: 20px 50px 30px;
+    font-size: 14px;
+}
+
+.kuro2 {
+    background-color: #364549;
+    color: #e3e3e3;
+    width: 60%;
+    padding: 20px 50px;
+    font-size: 14px;
+}
+
+pre {
+    font-family: "メイリオ";
+}
+
+.memo {
+    font-size: 14px;
+}
+
+.y {
+    color: #EBD247;
+}
+
+.b {
+    color: #41B7D7;
+}
+
+.p {
+    color: #FF8095;
+}
+
+.g {
+    color: #8BDF4C;
+}
+
+.h {
+    color: #9DABAE;
+}
+
+/* ボタン----------------------------------------------------- */
+.click_here {
+    display: inline-block;
+    background-color: rgb(84, 214, 197);
+    color: #FFF;
+    width: 600px;
+    padding: 4px 20px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    -webkit-tap-highlight-color: transparent;
+    transition: .2s ease-out;
+    font-weight: bold;
+}
+
+.click_here:hover {
+    cursor: pointer;
+    text-decoration: none;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 10px 0 rgba(0, 0, 0, 0.12), 0 4px 7px -2px rgba(0, 0, 0, 0.2);
+}
+
+
+/* なまこ----------------------------------------- */
+.nama_ko {
+    position: fixed;
+    width: 130px;
+    height: 130px;
+    left: 80%;
+    top: 76%;
+    padding: 20px;
+    text-align: center;
+    background: url(../img-box/img/namako_2.png) no-repeat;
+    animation-play-state: paused;
+}
+
+.nama_ko:hover {
+    animation: mochi .4s steps(6) forwards;
+}
+
+@keyframes mochi {
+    100% {
+        background-position: -960px 0;
+    }
+}
+
+.counter {
+    display: none;
+}
+
+/* studio----------------------------------------- */
+
+.img_all {
+    width:75%;
+}
+
+.img_left {
+    max-width: 100%;
+    height: auto;
+}
+
+.block {
+    display: flex;
+}
+.left_block {
+    flex: 1;
+    padding: 10px;
+}
+.right_block {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+}
+
+.right_txt {
+    width: 60%;
+}
+
+.a_left {
+    width:35%;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: #f2f8f0;
+}
+.b_right {
+    width:35%;
+    padding: 10px;
+    background-color: #f2f8f0;
+
+}
+
+.img_ab {
+    width: 95%;
+    height: auto;
+}
+
+.moto_code_block {
+    color:#fff;
+    background-color: #364549;
+    width:75%;
+    padding: 10px 10px 10px 20px;
+}
+
+.index {
+    width:80%;
+    font-weight:700;
+    padding: 0.5em;
+    color: #6c968e;
+    background: #cce2db;
+    border-left: solid 5px #88c2b5;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom:10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* studio----------------------------------------- */
+
+.table_icon {
+    color:#fff;
+    width: 165px;
+    height: 34px;
+    /* ほわってしたの戻す */
+    transform: scale(1.0);
+    transition-duration: 0.5s;
+
+    background-image: url("anim-symbol-on.png");
+    background-size: 27px 22px;
+    animation: anim-scale 0.5s ease-out;
+    transform-origin: 50% 50%;
+    border-radius: 0.5rem;
+    padding-top:8px;
+}
+
+/* ほわってさせる */
+.table_icon:hover {
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+
+}
+
+.list1 {
+    background-color:#5bb4ee;
+}
+
+.list2 {
+    background-color:#72daff;
+}
+
+.list3 {
+    background-color:#5bdaee;
+}
+
+.list4 {
+    background-color:#85e5d0;
+}
+
+.list5 {
+    background-color:#ace8bb;
+}
+
+.list6 {
+    background-color:#d7e8ac;
+}
+
+.list7 {
+    background-color:#5bb4ee;
+}
+
+.list8 {
+    background-color:#72daff;
+}

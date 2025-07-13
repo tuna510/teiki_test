@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style1.css" media="">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="../js/file1.js"></script>
+    <title>tekey_test</title>
+</head>
+
+
+<body>
+    <img src="../img-box/img/naiyo.png" alt="" id="naiyo">
+    <div class="all">
+        <!-- ヘッダー -->
+        <header id="header">
+            <nav>
+                <ul>
+                    <font size="2">
+                        <li class=""><a href="../index.html">基本画面</a></li>
+                        <li class=""><a href="">ざっくり機能</a></li>
+                    </font>
+                </ul>
+            </nav>
+        </header>
+
+        <br><br>
+
+        <!-- メイン -->
+        <a id="tekey_top"></a>
+        <div class="table_vscode">
+            <ul>
+                <a href="#comment">
+                    <li class="table_icon list3">発言</li>
+                </a>
+                <a href="#diff">
+                    <li class="table_icon list4">立ち絵設定</li>
+                </a>
+                <a href="#switch">
+                    <li class="table_icon list5">画面切り替え</li>
+                </a>
+                <a href="#piece">
+                    <li class="table_icon list6">コマの設定</li>
+                </a>
+                <a href="#pallet">
+                    <li class="table_icon list3">チャットパレット</li>
+                </a>
+                <a href="#counter">
+                    <li class="table_icon list4">カウンターリモコン</li>
+                </a>
+                <a href="#bgm">
+                    <li class="table_icon list5">BGMの音量変更</li>
+                </a>
+                <a href="#etc">
+                    <li class="table_icon list6">その他</li>
+                </a>
+            </ul>
+        </div>
+        <a href="#tekey_top">
+            <div class="namako nama_ko"></div>
+        </a>
+
+        <div class="page">
+            <div class="title">ざっくり機能</div>
+            <span>このあたりができれば十分じゃないかな～という機能です</span>
+            <br><br>
+
+            <p class="index" id="comment">発言</p>
+            <div class="block">
+                <div class="left_block">
+                    <img src="./../img/01_発言.png" class="img_left">
+                </div>
+                <div class="right_block">
+                    <span class="right_txt">
+                        名前を入れて<br>（一回入れればOK、名前なしでも発言はできるよ）<br>
+                        色を決めて（最初だけ設定すればOK）<br>
+                        発言内容を入れて<br>
+                        ボタンかEnterで発言！
+                    </span>
+                </div>
+            </div>
+            <br><br><br><br><br>
+
+
+
+
+            <p class="index" id="diff">立ち絵（発言時に表示される差分）の設定</p>
+            <div class="block">
+                <div class="left_block">
+                    <img src="./../img/02_立ち絵1.png" class="img_left">
+                </div>
+                <div class="right_block">
+                    <span class="right_txt">
+                        右上の歯車のマークを押下
+                    </span>
+                </div>
+            </div>
+            <div class="block">
+                <div class="left_block">
+                    <img src="./../img/02_立ち絵2.png" class="img_left">
+                </div>
+                <div class="right_block">
+                    <span class="right_txt">
+                        「立ち絵」<br>
+                        →「追加」<br><br>
+                        →立ち絵フォルダ設定になったら以下を設定<br>
+                        ・フォルダ名<br>
+                        ・立ち絵の表示位置<br><br>
+                        →立ち絵の差分名を<br>
+                        　画像ファイルとは<br>
+                        　違う名前に設定したい場合は「追加」、<br>
+                        　画像ファイルの名前をそのまま<br>
+                        　差分名にして大丈夫な場合は<br>
+                        　「画像をアップロードして追加」
+                    </span>
+                </div>
+            </div>
+            <div class="block">
+                <div class="a_left">
+                    <span>「追加」を押した場合</span>
+                    <img src="./../img/02_立ち絵a.png" class="img_ab"><br>
+                    <span>・画面右上が家のマーク（左上が/myFoldar）なら<br>
+                        　自分がtekeyのどこのルームでも使えるフォルダ、<br>
+                        　カメラのマーク（左上が/roomFoldar/ルーム名）なら<br>
+                        　そのルームでだけ使えるフォルダにアップロードします<br>
+                        <br>
+                        ・「タグ」は未設定でもOK<br>
+                        　自分が以降画像を探しやすくなるよう<br>
+                        　分類するためのものです
+                    </span>
+                    <br><br>
+                </div>
+                <div class="b_right">
+                    <span>「画像をアップロードして追加」を押した場合</span>
+                    <img src="./../img/02_立ち絵b.png" class="img_ab"><br>
+                    <span>・「ルーム専用フォルダにアップロード」を選ぶと<br>
+                        　そのルームでだけ使えるフォルダにアップロードします<br>
+                        　OFFのままだとtekeyのどこのルームでも使えるフォルダに<br>
+                        　アップロードします<br>
+                        <br>
+                        ・「タグ」は未設定でもOK<br>
+                        　自分が以降画像を探しやすくなるよう<br>
+                        　分類するためのものです<br>
+                        <br>
+                        ・こちらのやり方でもアップロード後<br>
+                        　差分の名前を変えることは可能です
+                    </span>
+                    <br><br>
+                    <span class="right_txt">
+                    </span>
+                </div>
+            </div>
+            <div class="block">
+                <div class="left_block">
+                    <img src="./../img/02_立ち絵4.png" class="img_left">
+                </div>
+                <div class="right_block">
+                    <span class="right_txt">
+                        チャットタブの名前の横にある<br>
+                        顔のマークから<br>
+                        作成した立ち絵フォルダを選択すれば<br>
+                        以降メインでの発言で<br>
+                        画面で差分が表示されるように
+                    </span>
+                </div>
+            </div>
+            <br><br><br><br><br>
+
+
+            <p class="index" id="switch">画面の切り替え</p>
+            <div class="block">
+                <div class="left_block">
+                    <img src="./../img/03_切り替え.png" class="img_left">
+                </div>
+                <div class="right_block">
+                    <span class="right_txt">
+                        画面右上の<br>
+                        「立ち絵画面」<br>
+                        「マップ画面」<br>
+                        「同時表示画面」<br>
+                        を押すことで画面を切り替えられます。<br>
+                        <br>
+                        ただの雑談なら立ち絵画面、<br>
+                        卓中は同時表示画面～など<br>
+                        なんとなく使い分けるといいかもです<br>
+                        <br>
+                        <br>
+                        <b>・立ち絵画面<br></b>
+                        立ち絵（発言時の差分）と背景画像のみ表示<br>
+                        <br>
+                        <b>・マップ画面</b><br>
+                        マップ（マップやパネル、コマなど）のみ表示<br>
+                        立ち絵は表示されない<br>
+                        <br>
+                        <b>・同時表示画面<br></b>
+                        立ち絵、マップどちらも表示
+                    </span>
+                </div>
+            </div>
+            <div class="block">
+                <div class="left_block">
+                    <img src="./../img/03_立ち絵不透明化.png" class="img_left">
+                </div>
+                <div class="right_block">
+                    <span class="right_txt">
+                        立ち絵画面に変更<br>
+                        →適当な場所を右クリック<br>
+                        →立ち絵の不透明化<br>
+                        をやっておくと<br>
+                        最新の発言者以外の立ち絵が<br>
+                        半透明にならないようにもできます
+                    </span>
+                </div>
+            </div>
+            <br><br><br><br><br>
+
+
+            <p class="index" id="piece">コマ（全身立ち絵）の設定</p>
+            <span>ステータス管理に使用します。<br>
+                最近の感じだとコマに全身立ち絵を設定するのが主流なのかな～と思っています</span>
+            <div class="block">
+                <div class="a_left">
+                    <span></span>
+                    <img src="./../img/04_コマa.png" class="img_ab"><br>
+                    <span>マップ画面で画像のアイコンを押下していく</span>
+                    <br><br>
+                </div>
+                <div class="b_right">
+                    <span></span>
+                    <img src="./../img/04_コマb.png" class="img_ab"><br>
+                    <span>マップ画面か立ち絵表示画面
+                        →適当なところを右クリックし
+                        →「キャラクターを追加する」
+                    </span>
+                    <br><br>
+                </div>
+            </div>
+            <div class="block">
+                <div class="left_block">
+                    <img src="./../img/04_コマc.png" class="img_left">
+                </div>
+                <div class="right_block">
+                    <span class="right_txt">
+                        画像を追加（必要に応じてアップロード）<br>
+                        →ステータスを入力<br>
+                        →キャラクター名を設定<br>
+                        　（発言時と同じ名前にしておくと<br>
+                        　ステータス参照して<br>
+                        　SANCなどができます）<br>
+                        →必要に応じてURL記載<br>
+                        →追加<br>
+                        <br>
+                        コマが小さいな～と思ったら<br>
+                        画像青枠の部分の数値で調整<br>
+                    </span>
+                </div>
+            </div>
+
+            <br><br><br><br><br>
+
+
+            <p class="index" id="pallet">チャットパレット</p>
+            <div class="block">
+                <div class="left_block">
+                    <img src="./../img/05_パレット.png" class="img_left">
+                </div>
+                <div class="right_block">
+                    <span class="right_txt">
+                        サイドバーの中にある<br>
+                        「チャットパレット」に<br>
+                        よく使うダイスなどを登録しておけます。<br>
+                        発言もここから直接できます。<br>
+                        CCB&lt;={SAN} などの数値を適用するには<br> コマと同じ名前にする必要あり<br>
+                        <br>
+                        いい感じのパレットができたら<br>
+                        「セーブ」で保存しておくこともできます<br>
+                        （キャラクターの名前や色ごと保存されます）
+                    </span>
+                </div>
+            </div>
+            <span>普通のテキストも登録できますが、<br>
+                プルダウンにしておくと大変便利です（個人的な見解）<br>
+                「###」で囲むことでプルダウンにできます。<br>
+                <br>
+                <div class="moto_code_block">【サンプル】<br>
+                    ###プルダウンのタイトル<br>
+                    ここに登録内容を記載<br>
+                    CCB&lt;={SAN} SANC <br>CCB&lt;={STR}*5 STR*5 <br>CCB&lt;=50 目星 <br>### <br><br>###プルダウンのタイトル
+                    <br>//
+                    STR=10
+                    <br>//
+                    CON=10 <br>// POW=10<br>
+                    このように書いてチャットパレットのどこかに置いておくと、 <br>コマにないステータス等も登録してチャットパレットの入力に反映できます。<br>
+                    卓中発言で使うことはないと思うので、使いたいタブとは別のタブに書いておくのもありです <br>（チャットパレットのタブ2とかに置いておいてもタブ1の発言に反映されます）
+                    <br>###<br></div>
+            </span>
+            <br><br><br><br><br>
+
+
+
+
+
+            <p class="index" id="counter">カウンターリモコン</p>
+            <span>CoCだとSAN値の増減やHPの増減などに使用します。</span>
+            <div class="block">
+                <div class="left_block">
+                    <img src="./../img/06_カウンター.png" class="img_left">
+                </div>
+                <div class="right_block">
+                    <span class="right_txt">
+                        サイドバーの中にある……のですが、<br>
+                        こっちがいい～ということがない限り<br>
+                        使わなくていいかも…ッ<br>
+                        <br>
+                        コマと同じ名前で発言すれば、<br>
+                        ココフォリアと同じように<br>
+                        :HP+1<br>
+                        :SAN-5<br>
+                        という感じのコマンドで対応できます。<br>
+                        <br>
+                        単純なSAN増減HP増減なんかならログに綺麗に残すには1項目当たり2個ボタンが必要なのでそういう点でもコマンド打ちのほうがやりやすいと思うし……！（この辺は見なくていいです）<br>
+                    </span>
+                </div>
+            </div>
+            <br><br><br><br><br>
+
+            <p class="index" id="bgm">BGMの音量変更</p>
+            <div class="block">
+                <div class="left_block">
+                    <img src="../img/基本_03_06.png" class="img_left">
+                </div>
+                <div class="right_block">
+                    <span class="right_txt">
+                        サイドバーの一番下にある「再生中の音楽」で<br>
+                        流れているBGMの音量を調整できます。<br>
+                        BGMの✖ボタンを押すとBGM自体が消えます。<br>
+                        また、「再生中の音楽」ウィンドウを消すと音楽が流れなくなります<br>
+                        ※このウィンドウ内の操作は自分だけに反映
+                    </span>
+                </div>
+            </div>
+            <br><br><br><br><br>
+
+
+
+            <p class="index" id="etc">その他：ルビ</p>
+            <span>|テキスト《ルビ》<br>
+                でテキスト部分にルビを振ることができます。<br>
+                書き換えて使ってみてください！</span>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

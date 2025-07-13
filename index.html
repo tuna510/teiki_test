@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style1.css" media="">
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="./js/file1.js"></script>
+    <title>tekey_test</title>
+</head>
+
+
+
+<body>
+    <img src="./img-box/img/naiyo.png" alt="" id="naiyo">
+    <div class="all">
+        <!-- ヘッダー -->
+        <header id="header">
+            <nav>
+                <ul>
+                    <font size="2">
+                        <li class=""><a href="">基本画面</a></li>
+                        <li class=""><a href="./html/tekey_work.html">ざっくり機能</a></li>
+                    </font>
+                </ul>
+            </nav>
+        </header>
+
+        <a href="#tekey_top">
+            <div class="namako nama_ko"></div>
+        </a>
+
+        <br><br>
+        <a id="tekey_top"></a>
+        <!-- メイン -->
+        <!---
+        <div class="table_vscode">
+            <a href="#tekey_login"><img src="../img/flas1.png" alt="" class="table_icon"></a>
+            <a href="#tekey_mypage"><img src="../img/flas2.png" alt="" class="table_icon"></a>
+            <a href="#tekey_img"><img src="../img/flas3.png" alt="" class="table_icon"></a>
+        </div> --->
+
+        <div class="page">
+            <div class="title">基本の画面</div><br>
+
+            <p class="index">ヘッダーとチャット画面</p>
+            <div class="">
+                <div class="block">
+                    <div class="left_block">
+                        <img src="./img/基本_01.png" class="img_left">
+                    </div>
+                    <div class="right_block">
+                        <span class="right_txt">
+                            画面の切り替えについては<a href="./html/tekey_work.html#switch">こっち</a><br>
+                            <br>
+                            <b>画像のアップロード</b><br>
+                            ・「ルーム専用フォルダにアップロード」を選ぶと<br>
+                            　そのルームでだけ使えるフォルダにアップロードします<br>
+                            　OFFのままだとtekeyのどこのルームでも使えるフォルダに<br>
+                            　アップロードします<br>
+                            <br>
+                            ・「タグ」は未設定でもOK<br>
+                            　自分が以降画像を探しやすくなるよう<br>
+                            　分類するためのものです<br>
+                        </span>
+                    </div>
+                </div>
+                <img src="./img/初期画面_1.png" class="img_all">
+            </div>
+            <br><br><br><br><br>
+
+
+            <p class="index">サイドバー</p>
+            <div class="block">
+                <div class="left_block">
+                    <img src="./img/基本_03_00.png" class="img_left">
+                </div>
+                <div class="right_block">
+                    <span class="right_txt">
+                        サイドバー上部<br>
+                        薄いピンクの部分（画像だと「ステータステーブル」と書いてある場所）を掴むと他のウィンドウと上下の位置を入れ替えられます<br>
+                        ※自分の画面のみに反映
+                    </span>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="left_block">
+                    <img src="./img/基本_03_01.png" class="img_left">
+                </div>
+                <div class="right_block">
+                    <span class="right_txt">
+                        <b>ステータステーブル</b><br>
+                        主にコマの記載の情報が確認できます<br>
+                        右上の「︙」から値の最大値の表示もできます<br>
+                        ※「名前」や「SAN」などの横幅の広さの変更や最大値の表示は自分のみに反映、入力されている値の変更は全員に反映
+                    </span>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="left_block">
+                    <img src="./img/基本_03_02.png" class="img_left">
+                </div>
+                <div class="right_block">
+                    <span class="right_txt">
+                        <b>チャットパレット</b><br>
+                        概要は<a href="./html/tekey_work.html#pallet">こちら</a><br>
+                        ウィンドウの縦幅を広げたり狭めたり<br>
+                        タブの追加削除もできます<br>
+                        ※自分の画面のみに反映
+                    </span>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="left_block">
+                    <img src="./img/基本_03_03.png" class="img_left">
+                </div>
+                <div class="right_block">
+                    <span class="right_txt">
+                        <b>メモ</b><br>
+                        長い情報はここにメモしておけます。<br>
+                        フォルダも作れるので嵩張らせずにたくさん書けます<br>
+                        ハウスルール等を記載しているケースもあり<br>
+                        <br>
+                        ルームにいる誰でも追加することができるのでその卓のGMのルールに則って使用<br>
+                        ※全員の画面に反映、公開範囲が「自分のみ」のメモは自分だけ、公開範囲を指定しているメモはその公開範囲だけに反映<br>
+                    </span>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="left_block">
+                    <img src="./img/基本_03_04.png" class="img_left">
+                </div>
+                <div class="right_block">
+                    <span class="right_txt">
+                        <b>カウンターリモコン</b><br>
+                        概要は<a href="./html/tekey_work.html#counter">こちら</a><br>
+                    </span>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="left_block">
+                    <img src="./img/基本_03_05.png" class="img_left">
+                </div>
+                <div class="right_block">
+                    <span class="right_txt">
+                        <b>フリーテーブル</b><br>
+                        誰が発狂してるか～とか持ち物何持ってるか～など<br>
+                        わりとフリーダムにまとめておけます<br>
+                        ※カラムの横幅の広さ以外の変更は他の人にも反映されます
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="block">
+                <div class="left_block">
+                    <img src="./img/基本_03_06.png" class="img_left">
+                </div>
+                <div class="right_block">
+                    <span class="right_txt">
+                        <b>演出</b><br>
+                        BGMを流したりするときに使います。<br>
+                        ルーム管理者以外は権限付与されていない場合は使用不可<br>
+                        ※ここで音楽を流したりすると全員に反映されます<br>
+                        <br>
+                        <b>再生中の音楽</b><br>
+                        流れているBGMの音量を調整できます。<br>
+                        BGMの✖ボタンを押すとBGM自体が消えます。<br>
+                        また、「再生中の音楽」ウィンドウを消すと音楽が流れなくなります<br>
+                        ※このウィンドウ内の操作は自分だけに反映
+                    </span>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
