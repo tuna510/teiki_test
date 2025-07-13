@@ -324,7 +324,7 @@ a {
 
 /* メニューオープン時（スライドイン） */
     .table_vscode.active {
-    transform: translateX(-40%) !important; /* スライドイン */
+    transform: translateX(-30%) !important; /* スライドイン */
     }
 
 .table_icon {
