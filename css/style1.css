@@ -1,4 +1,4 @@
-/* 1289以下はTOP崩れる */
+
 #naiyo {
     display: none;
 }
@@ -7,10 +7,6 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-.goto {
-    text-align: center;
 }
 
 /* ■ヘッダー */
@@ -25,16 +21,12 @@
 
 /* ■ヘッダー＞メニュー */
 nav ul {
-    /* display: table; */
     margin: 0 50px;
-    /* padding: 0; */
-    /* width: 90%; */
     line-height: 47px;
 }
 
 nav li {
     display: table-cell;
-    /* margin: 0 5px; */
     padding: 0 10px;
     min-width: 50px;
     text-align: center;
@@ -55,9 +47,6 @@ nav li.current {
 nav li:hover {
     border-bottom: 3px solid rgb(74, 236, 201);
 }
-
-
-/* -------------------------------------------------- */
 
 /* 右のメニュー------------------------ */
 .table_vscode {
@@ -103,75 +92,8 @@ nav li:hover {
     color: rgb(105, 108, 110);
 }
 
-.kuro {
-    background-color: #364549;
-    color: #e3e3e3;
-    width: 60%;
-    padding: 20px 50px 30px;
-    font-size: 14px;
-}
 
-.kuro2 {
-    background-color: #364549;
-    color: #e3e3e3;
-    width: 60%;
-    padding: 20px 50px;
-    font-size: 14px;
-}
-
-pre {
-    font-family: "メイリオ";
-}
-
-.memo {
-    font-size: 14px;
-}
-
-.y {
-    color: #EBD247;
-}
-
-.b {
-    color: #41B7D7;
-}
-
-.p {
-    color: #FF8095;
-}
-
-.g {
-    color: #8BDF4C;
-}
-
-.h {
-    color: #9DABAE;
-}
-
-/* ボタン----------------------------------------------------- */
-.click_here {
-    display: inline-block;
-    background-color: rgb(84, 214, 197);
-    color: #FFF;
-    width: 600px;
-    padding: 4px 20px;
-    margin-bottom: 5px;
-    text-decoration: none;
-    border-radius: 4px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-    -webkit-tap-highlight-color: transparent;
-    transition: .2s ease-out;
-    font-weight: bold;
-}
-
-.click_here:hover {
-    cursor: pointer;
-    text-decoration: none;
-    transform: translateY(-4px);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 10px 0 rgba(0, 0, 0, 0.12), 0 4px 7px -2px rgba(0, 0, 0, 0.2);
-}
-
-
-/* なまこ----------------------------------------- */
+/* ----------------------------------------- */
 .nama_ko {
     position: fixed;
     width: 130px;
@@ -328,3 +250,93 @@ a {
 .list8 {
     background-color:#72daff;
 }
+
+.menu-button {
+    display: none;
+}
+
+
+/* studio----------------------------------------- */
+
+@media (max-width: 1000px) {
+
+.index {
+    width:100%;
+    font-weight:700;
+    padding: 0.5em;
+}
+
+    .nama_ko {
+        display: none;
+    }
+
+    .block {
+        display: block;
+    }
+
+    .left_block,
+    .right_block {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .right_txt {
+    width: 100%;
+}
+.a_left {
+    width:100%;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: #f2f8f0;
+    margin-bottom: 10px;
+}
+.b_right {
+    width:100%;
+    padding: 10px;
+    background-color: #f2f8f0;
+
+}
+    .table_vscode {
+        position: fixed !important;
+        /* display: none; */
+        display: block;
+        top: 50px;
+        right: 0 !important;
+        height: 100vh !important;
+        width: 100%;
+        background: white;
+        transform: translateX(100%); /* 初期は右外 */
+        background-color: rgba(255, 255, 255, 0.466) !important;
+        transition: transform 0.3s ease !important;
+        z-index: 9998 !important;
+        overflow-y: auto !important;
+        padding: 20px !important;
+        text-align: left !important;
+    }
+
+    .menu-button {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+/* メニューオープン時（スライドイン） */
+    .table_vscode.active {
+    transform: translateX(-40%) !important; /* スライドイン */
+    }
+
+.table_icon {
+    transform: none !important; /* スケール変形解除 */
+    transition: none !important; /* 変形アニメーション解除 */
+    animation: none !important; /* アニメーション解除 */
+    background-image: none !important; /* 必要なら背景画像も解除 */
+    display: block;
+    padding: 10px 15px 7px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+}
+
+
